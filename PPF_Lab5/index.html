@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <script src="funkcje_jquery.js"></script>
+    <script src="style.css"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>PPFront, laboratorium 5  </title>
+</head>
+<body>
+<h2>Nagłówek</h2>
+
+<p id="p_01" class="cp_01">Pierwszy paragraf</p>
+<p id="p_02" class="cp_01">Drugi paragraf</p>
+<p id="p_03">Trzeci paragraf</p>
+<button id="button_01">Naciśnij, aby ukryć Pierwszy paragraf</button>
+<button id="button_02">Naciśnij, aby ukryć Drugi paragraf</button>
+<button id="button_03">Naciśnij, aby ukryć Trzeci paragraf</button>
+<button id="button_0445">Naciśnij</button>
+<button id="button_011">Naciśnij, aby ujawnić Pierwszy paragraf</button>
+<button id="button_012">Naciśnij, aby ujawnić Drugi paragraf</button>
+<button id="button_013">Naciśnij, aby ujawnić Trzeci paragraf</button>
+<button id="button_01445">Naciśnij</button>
+<!--PLIK JAVA NIE DZIAŁA TETY SPRUBUJE ZROBIC ZTĄD-->
+<script>
+$( document ).ready(function() {
+    $( "#button_01" ).click(function() {
+        $( "#p_01" ).hide( "slow" );
+    });
+    $( "#button_02" ).click(function() {
+        $( "#p_2" ).hide( "slow" );
+    });
+    $( "#button_03" ).click(function() {
+        $( "#p_03" ).hide( "slow" );
+    });
+    $( "#button_0445" ).click(function() {
+        $( ".cp_01" ).hide( "slow" );
+    });
+});
+$( document ).ready(function() {
+    $( "#button_011" ).click(function() {
+        $( "#p_01" ).show( "slow" );
+    });
+    $( "#button_012" ).click(function() {
+        $( "#p_2" ).show( "slow" );
+    });
+    $( "#button_013" ).click(function() {
+        $( "#p_03" ).show( "slow" );
+    });
+    $( "#button_01445" ).click(function() {
+        $( ".cp_01" ).show( "slow" );
+    });
+});
+</script>
+<!--ZADANIE 447-->
+<div>
+    <button>:nth-child(even)</button>
+    <button>:nth-child(odd)</button>
+    <button>:nth-child(3n)</button>
+    <button>:nth-child(2)</button>
+  </div>
+  <div>
+    <button>:nth-child(3n+1)</button>
+    <button>:nth-child(3n+2)</button>
+    <button data-method="even">.even()</button>
+    <button data-method="odd">.odd()</button>
+  </div>
+   
+  <div>
+    <table>
+      <tr><td>John</td></tr>
+      <tr><td>Karl</td></tr>
+      <tr><td>Brandon</td></tr>
+      <tr><td>Benjamin</td></tr>
+    </table>
+  </div>
+  <div>
+    <table>
+      <tr><td>Sam</td></tr>
+    </table>
+  </div>
+  <div>
+    <table>
+      <tr><td>Glen</td></tr>
+      <tr><td>Tane</td></tr>
+      <tr><td>Ralph</td></tr>
+      <tr><td>David</td></tr>
+      <tr><td>Mike</td></tr>
+      <tr><td>Dan</td></tr>
+    </table>
+  </div>
+   
+  <span>tr<span id="inner"></span></span>
+<script>
+$( "button" ).click(function() {
+  var str = $( this ).text();
+  var method = $( this ).attr( "data-method" );
+  $( "tr" ).css( "background", "white" );
+  if ( method ) {
+    $( "tr" )[ method ]().css( "background", "#ff0000" );
+  } else {
+    $( "tr" + str ).css( "background", "#ff0000" );
+  }
+  $( "#inner" ).text( str );
+});
+</script>
+
+</body>
+</html>

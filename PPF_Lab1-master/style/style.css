@@ -1,0 +1,50 @@
+*{
+    margin: 0 3% 2px 3%;
+    padding: 0 0 0 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 24px;
+    text-align: center;
+    background-color: lightcoral;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+}
+h2{
+    font-size: 20px;
+    background-color: lightgreen;
+}
+h3{
+    font-size: 16px;
+    background-color: lightskyblue;
+}
+h3,h5{
+    font-size: 14px;
+    background-color: yellow;
+}
+li{
+    font-size: 12px;
+    color: red;
+    padding-left: 32px;
+    margin-bottom: 0;
+    background-color: lightyellow;
+}
+li span{
+    display: block;
+    margin-left: -3%;
+    color: rgb(187, 0, 0);
+}
+
+p{
+    font-size: 12px;
+    background-color: lightsteelblue;
+    text-align: justify;
+    padding: 10px;
+}
+p em{
+    margin-left: 0;
+    margin-right: 0;
+}

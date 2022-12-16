@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery_effects.js"></script>
+    <script src="style.css"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>PPFront, laboratorium 5  </title>
+    <style>
+    #p_03 {
+top: 50%;
+left: 50%;
+    }
+        #circle {
+    width: 120px;
+    height: 120px;
+    background: #ee1d1d;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+}
+#square {
+    width: 120px;
+    height: 120px;
+    background: #47ff66;
+}
+#square1 {
+    width: 100px;
+    height: 100px;
+    background: #ee1d1d;
+}
+#triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 140px solid #fcf921;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+}
+    </style>
+</head>
+<body>
+    <h2>Kwadrat</h2>
+    <button id="clickme1">Naciśnij</button>
+    <div id="square"></div>
+    <h2>Trójkąt</h2>
+    <button id="clickme2">Naciśnij</button>
+    <div id="triangle"></div>
+    <h2>Koło</h2>
+    <button id="clickme3">Naciśnij</button>
+    <div id="circle"></div>
+<script>
+$( document.body ).ready(function() {
+  $( "clickme1" ).click(function() {
+    $( "#square" ).slideDown( function() {
+    });
+  });
+  $( "clickme2" ).click(function() {
+    $( "#triangle" ).slideDown( function() {
+    });
+  });
+  $( "clickme1" ).click(function() {
+    $( "#circle" ).slideDown( function() {
+    });
+  });
+});
+
+$("#clickme4").click(function(){
+    var div = $("div");
+    div.animate({height:'400px',opacity: '0.3'},"slow");
+    div.animate({width:'350px',opacity: '0.7'},"slow");
+    div.animate({width:'50px',opacity: '0.9'},"slow");
+    div.animate({height:'500px',opacity: '0.4'},"slow");
+
+});
+
+</script>
+<!--PLIK JAVA NIE DZIAŁA TETY SPRUBUJE ZROBIC ZTĄD-->
+<h2>Kwadrat czerwony</h2>
+<button id="clickme4">Naciśnij</button>
+<div id="square1">
+   <p id="p_03"> Animacja</p>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+button {
+    display: block;
+    font-size: 12px;
+    width: 100px;
+  }
+  div {
+    float: left;
+    margin: 10px;
+    font-size: 10px;
+    border: 1px solid black;
+  }
+  span {
+    color: blue;
+    font-size: 18px;
+  }
+  #inner {
+    color: red;
+  }
+  td {
+    width: 50px;
+    text-align: center;
+  }
+  
+#circle {
+    width: 120px;
+    height: 120px;
+    background: #ee1d1d;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+}
+#square {
+    width: 120px;
+    height: 120px;
+    background: #47ff66;
+}
+#triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 140px solid #fcf921;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+}
